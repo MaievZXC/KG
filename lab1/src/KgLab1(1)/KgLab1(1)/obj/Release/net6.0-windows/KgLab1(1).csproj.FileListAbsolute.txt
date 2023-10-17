@@ -1,0 +1,17 @@
+D:\MSVisual\KgLab1(1)\KgLab1(1)\bin\Release\net6.0-windows\KgLab1(1).exe
+D:\MSVisual\KgLab1(1)\KgLab1(1)\bin\Release\net6.0-windows\KgLab1(1).deps.json
+D:\MSVisual\KgLab1(1)\KgLab1(1)\bin\Release\net6.0-windows\KgLab1(1).runtimeconfig.json
+D:\MSVisual\KgLab1(1)\KgLab1(1)\bin\Release\net6.0-windows\KgLab1(1).dll
+D:\MSVisual\KgLab1(1)\KgLab1(1)\bin\Release\net6.0-windows\KgLab1(1).pdb
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).csproj.AssemblyReference.cache
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).csproj.GenerateResource.cache
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).GeneratedMSBuildEditorConfig.editorconfig
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).AssemblyInfoInputs.cache
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).AssemblyInfo.cs
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).csproj.CoreCompileInputs.cache
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).dll
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\refint\KgLab1(1).dll
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).pdb
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1(1).genruntimeconfig.cache
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\ref\KgLab1(1).dll
+D:\MSVisual\KgLab1(1)\KgLab1(1)\obj\Release\net6.0-windows\KgLab1_1_.ColorSwaps.resources

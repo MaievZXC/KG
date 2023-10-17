@@ -1,0 +1,5 @@
+C:\Users\Sony\Desktop\KgLab1(1).exe
+C:\Users\Sony\Desktop\KgLab1(1).dll
+C:\Users\Sony\Desktop\KgLab1(1).deps.json
+C:\Users\Sony\Desktop\KgLab1(1).runtimeconfig.json
+C:\Users\Sony\Desktop\KgLab1(1).pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dh4WDxx2Jgx/eh55hoewsMowwgw/yajF5DpV2h2m29gByKsg/Tx+04nXmLTbursUcqg9FxmqFV/jiy3mIM3p3w==",
+  "success": true,
+  "projectFilePath": "D:\\MSVisual\\KgLab1(1)\\KgLab1(1)\\KgLab1(1).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sony\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.13\\microsoft.netcore.app.runtime.win-x86.6.0.13.nupkg.sha512",
+    "C:\\Users\\Sony\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.13.nupkg.sha512",
+    "C:\\Users\\Sony\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x86.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

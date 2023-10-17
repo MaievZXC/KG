@@ -1,0 +1,7 @@
+C:\Users\Sony\Desktop\KgLab1(1).pdb
+C:\Users\Sony\Desktop\D3DCompiler_47_cor3.dll
+C:\Users\Sony\Desktop\PenImc_cor3.dll
+C:\Users\Sony\Desktop\PresentationNative_cor3.dll
+C:\Users\Sony\Desktop\vcruntime140_cor3.dll
+C:\Users\Sony\Desktop\wpfgfx_cor3.dll
+C:\Users\Sony\Desktop\KgLab1(1).exe
