@@ -39,18 +39,18 @@ namespace KgLab1_1_
         private void SetCMYKbyRGB()
         {
             ColorSystemLogic.GetCMYKShades(out float cyanShade, out float magentaShade, out float yellowShade, out float key);
-            this.CyanTrackBar.Value = (int)(cyanShade * 100);
-            this.MagentaTrackBar.Value = (int)(magentaShade * 100);
-            this.YellowTrackBar.Value = (int)(yellowShade * 100);
-            this.KeyTrackBar.Value = (int)(key * 100);
+            this.CyanTrackBar.Value = (int)Math.Round((cyanShade * 100), MidpointRounding.AwayFromZero);
+            this.MagentaTrackBar.Value = (int)Math.Round((magentaShade * 100), MidpointRounding.AwayFromZero);
+            this.YellowTrackBar.Value = (int)Math.Round((yellowShade * 100), MidpointRounding.AwayFromZero);
+            this.KeyTrackBar.Value = (int)(int)Math.Round((key * 100), MidpointRounding.AwayFromZero);
         }
 
         private void SetHSVbyRGB()
         {
             ColorSystemLogic.GetHSVShades(out int hue, out float saturation, out float value);
             this.HueTrackBar.Value = hue;
-            this.SaturationTrackBar.Value = (int)(100 * saturation);
-            this.ValueTrackBar.Value = (int)(100 * value);
+            this.SaturationTrackBar.Value = (int)Math.Round((100 * saturation), MidpointRounding.AwayFromZero);
+            this.ValueTrackBar.Value = (int)Math.Round((100 * value), MidpointRounding.AwayFromZero);
         }
 
         private void SetRGBbyCMYK()

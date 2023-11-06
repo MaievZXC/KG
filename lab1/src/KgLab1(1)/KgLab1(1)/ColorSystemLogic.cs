@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace KgLab1_1_
 {
     public class ColorSystemLogic
@@ -12,63 +14,63 @@ namespace KgLab1_1_
 
         public static void GetRGBShadesForCMYK(out int redShade, out int greenShade, out int blueShade)
         {
-            redShade = (int)(255 * (1 - (float)colorForm.CyanTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100));
-            greenShade = (int)(255 * (1 - (float)colorForm.MagentaTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100));
-            blueShade = (int)(255 * (1 - (float)colorForm.YellowTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100));
+            redShade = (int)Math.Round((255 * (1 - (float)colorForm.CyanTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100)), MidpointRounding.AwayFromZero);
+            greenShade = (int)Math.Round((255 * (1 - (float)colorForm.MagentaTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100)), MidpointRounding.AwayFromZero);
+            blueShade = (int)Math.Round((255 * (1 - (float)colorForm.YellowTrackBar.Value / 100) * (1 - (float)colorForm.KeyTrackBar.Value / 100)), MidpointRounding.AwayFromZero);
         }
 
         public static void GetRGBShadesForHSV(out int redShade, out int greenShade, out int blueShade)
         {
             int HueRange = (colorForm.HueTrackBar.Value / 60) % 6;
-            int ValueMin = ((100 - colorForm.SaturationTrackBar.Value) * colorForm.ValueTrackBar.Value) / 100;
-            int a = (colorForm.ValueTrackBar.Value - ValueMin) * (colorForm.HueTrackBar.Value % 60) / 60;
-            int ValueInc = ValueMin + a;
-            int ValueDec = colorForm.ValueTrackBar.Value - a;
+            float ValueMin = (float)((100 - colorForm.SaturationTrackBar.Value) * colorForm.ValueTrackBar.Value) / 100;
+            float a = (float)(colorForm.ValueTrackBar.Value - ValueMin) * (colorForm.HueTrackBar.Value % 60) / 60;
+            float ValueInc = ValueMin + a;
+            float ValueDec = colorForm.ValueTrackBar.Value - a;
 
-            redShade = 0;
-            greenShade = 0;
-            blueShade = 0;
+            float redShade1 = 0;
+            float greenShade1 = 0;
+            float blueShade1 = 0;
 
             if (HueRange == 0)
             {
-                redShade = colorForm.ValueTrackBar.Value;
-                greenShade = ValueInc;
-                blueShade = ValueMin;
+                redShade1 = colorForm.ValueTrackBar.Value;
+                greenShade1 = (ValueInc);
+                blueShade1 = (ValueMin);
             }
             else if (HueRange == 1)
             {
-                redShade = ValueDec;
-                greenShade = colorForm.ValueTrackBar.Value;
-                blueShade = ValueMin;
+                redShade1 = (ValueDec);
+                greenShade1 = colorForm.ValueTrackBar.Value;
+                blueShade1 = (ValueMin);
             }
             else if (HueRange == 2)
             {
-                redShade = ValueMin;
-                greenShade = colorForm.ValueTrackBar.Value;
-                blueShade = ValueInc;
+                redShade1 = (ValueMin);
+                greenShade1 = colorForm.ValueTrackBar.Value;
+                blueShade1 = (ValueInc);
             }
             else if (HueRange == 3)
             {
-                redShade = ValueMin;
-                greenShade = ValueDec;
-                blueShade = colorForm.ValueTrackBar.Value;
+                redShade1 = (ValueMin);
+                greenShade1 = (ValueDec);
+                blueShade1 = colorForm.ValueTrackBar.Value;
             }
             else if (HueRange == 4)
             {
-                redShade = ValueInc;
-                greenShade = ValueMin;
-                blueShade = colorForm.ValueTrackBar.Value;
+                redShade1 = (ValueInc);
+                greenShade1 = (ValueMin);
+                blueShade1 = colorForm.ValueTrackBar.Value;
             }
             else if (HueRange == 5)
             {
-                redShade = colorForm.ValueTrackBar.Value;
-                greenShade = ValueMin;
-                blueShade = ValueDec;
+                redShade1 = colorForm.ValueTrackBar.Value;
+                greenShade1 = (ValueMin);
+                blueShade1 = (ValueDec);
             }
 
-            redShade = redShade * 255 / 100;
-            greenShade = greenShade * 255 / 100;
-            blueShade = blueShade * 255 / 100;
+            redShade = (int)Math.Round((float)redShade1 * 255 / 100, MidpointRounding.AwayFromZero);
+            greenShade = (int)Math.Round((float)greenShade1 * 255 / 100, MidpointRounding.AwayFromZero);
+            blueShade = (int)Math.Round((float)blueShade1 * 255 / 100, MidpointRounding.AwayFromZero);
         }
 
         public static void GetCMYKShades(out float cyanShade, out float magentaShade, out float yellowShade, out float key)
@@ -107,16 +109,16 @@ namespace KgLab1_1_
             }
             else if (max == redShade)
             {
-                hue = (int)(60 * ((greenShade - blueShade) / delta));
+                hue = (int)Math.Round((60 * ((greenShade - blueShade) / delta)), MidpointRounding.AwayFromZero);
                 hue += (greenShade < blueShade) ? 360 : 0;
             }
             else if (max == greenShade)
             {
-                hue = (int)(60 * ((blueShade - redShade) / delta)) + 120;
+                hue = (int)Math.Round((60 * ((blueShade - redShade) / delta)) + 120, MidpointRounding.AwayFromZero);
             }
             else if (max == blueShade)
-            {
-                hue = (int)(60 * ((redShade - greenShade) / delta)) + 240;
+            {   
+                hue = (int)Math.Round((60 * ((redShade - greenShade) / delta)) + 240, MidpointRounding.AwayFromZero);
             }
 
             saturation = (max == 0) ? 0 : delta / max;

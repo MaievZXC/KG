@@ -183,7 +183,7 @@
             // MagentaLabel
             // 
             this.MagentaLabel.AutoSize = true;
-            this.MagentaLabel.Location = new System.Drawing.Point(13, 76);
+            this.MagentaLabel.Location = new System.Drawing.Point(5, 76);
             this.MagentaLabel.Name = "MagentaLabel";
             this.MagentaLabel.Size = new System.Drawing.Size(54, 15);
             this.MagentaLabel.TabIndex = 18;
