@@ -1,0 +1,12 @@
+D:\KG\KG_lab2.pdb
+D:\KG\cvextern.dll
+D:\KG\opencv_videoio_ffmpeg481_64.dll
+D:\KG\concrt140.dll
+D:\KG\msvcp140.dll
+D:\KG\msvcp140_1.dll
+D:\KG\msvcp140_2.dll
+D:\KG\msvcp140_atomic_wait.dll
+D:\KG\msvcp140_codecvt_ids.dll
+D:\KG\vcruntime140.dll
+D:\KG\vcruntime140_1.dll
+D:\KG\KG_lab2.exe
